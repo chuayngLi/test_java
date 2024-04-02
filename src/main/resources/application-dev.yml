@@ -1,0 +1,18 @@
+server:
+  port: 8000
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/demo?useSSL=false&serverTimezone=Hongkong&characterEncoding=utf-8&autoReconnect=true
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+
+storage:
+  upload-path: 'E:\test\demo01\'
+  upload-allow-extensions: "PNG,JPEG,JPG,GIF,AMR,MP3,MP4,XLSX,XLS,DOCX,DOC,ZIP,RAR,PDF,TXT"
+  generate-path: 'E:\test\demo01\'
+
+mybatis-plus:
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
