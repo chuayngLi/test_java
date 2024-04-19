@@ -24,4 +24,8 @@ public class User {
     @NotNull(message = "密码必填")
     private String password;
 
+    @TableField(value = "password")
+    @NotNull(message = "手机号必填")
+    private String phone;
+
 }

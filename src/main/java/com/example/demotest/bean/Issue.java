@@ -9,7 +9,7 @@ import lombok.Data;
 
 @Data
 @TableName("issue")
-public class Issue {
+public class Issue extends BaseBean {
     @TableId(value = "issue_id", type = IdType.AUTO)
     private Long issueId;
 
@@ -28,10 +28,5 @@ public class Issue {
     @TableField("resolve")
     private String resolve;
 
-    @TableField("created_at")
-    private String createdAt;
-
-    @TableField("updated_at")
-    private String updatedAt;
 
 }

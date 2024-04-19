@@ -1,5 +1,6 @@
 package com.example.demotest.bean;
 
+import com.baomidou.mybatisplus.annotation.TableField;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
 
@@ -9,6 +10,9 @@ import lombok.EqualsAndHashCode;
  */
 @Data
 public class BaseBean {
+    @TableField("created_at")
     private String createdAt;
+
+    @TableField("updated_at")
     private String updatedAt;
 }

@@ -43,7 +43,7 @@
             <version>8.0.29</version>
         </dependency>
 
-        <!--lombok-->
+        <!--lombok:省略log注入以及get、set方法-->
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
